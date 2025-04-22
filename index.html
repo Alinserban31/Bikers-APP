@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="app-header">
+                <h1>Biker Weather</h1>
+                <p class="subtitle">Your weather companion for the road</p>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name" id="city-input">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="weather-info">
+                <div class="location">
+                    <h2 id="city">City Name</h2>
+                </div>
+                <div class="weather-details">
+                    <div class="temperature">
+                        <h1 id="temp">--°C</h1>
+                    </div>
+                    <div class="weather-description">
+                        <p id="description">Weather Description</p>
+                    </div>
+                    <div class="biking-condition">
+                        <h3>Biking Condition</h3>
+                        <div class="condition-meter">
+                            <div class="meter-fill" id="biking-meter"></div>
+                        </div>
+                        <p id="biking-percentage">--%</p>
+                        <p id="biking-tip">Loading biking tips...</p>
+                    </div>
+                    <div class="navigation-buttons">
+                        <a href="routes.html" class="nav-btn">Find Biking Routes</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <span>Humidity</span>
+                            <span id="humidity">--%</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Wind Speed</span>
+                            <span id="wind">-- km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credit">
+                <p>Made by Șerban Cadmiel Alin</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
