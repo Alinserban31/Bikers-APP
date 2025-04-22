@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Routes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="routes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="routes-app">
+            <div class="app-header">
+                <h1>Biker Routes</h1>
+                <p class="subtitle">Discover amazing biking routes</p>
+            </div>
+            <div class="routes-container">
+                <div class="route-filters">
+                    <button id="random-route-btn" class="route-btn">Get Random Route</button>
+                    <div class="filter-options">
+                        <select id="difficulty-filter">
+                            <option value="all">All Difficulties</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                        <select id="distance-filter">
+                            <option value="all">All Distances</option>
+                            <option value="short">Short (0-10 km)</option>
+                            <option value="medium">Medium (11-20 km)</option>
+                            <option value="long">Long (21+ km)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="route-info" class="route-info">
+                    <h3>Suggested Route</h3>
+                    <p id="route-name">--</p>
+                    <p id="route-distance">Distance: -- km</p>
+                    <p id="route-difficulty">Difficulty: --</p>
+                    <p id="route-description">Click the button to get a random route suggestion!</p>
+                </div>
+                <div class="navigation-buttons">
+                    <a href="index.html" class="nav-btn">Back to Weather</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="routes.js"></script>
+</body>
+</html> 

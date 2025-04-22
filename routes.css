@@ -1,0 +1,153 @@
+.routes-app {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    border: 2px solid #1a5f38;
+}
+
+.routes-container {
+    margin-top: 30px;
+}
+
+.route-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.filter-options select {
+    padding: 10px 15px;
+    border: 2px solid #1a5f38;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.filter-options select:hover {
+    border-color: #0d3b1e;
+}
+
+.route-btn {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1a5f38, #0d3b1e);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(26, 95, 56, 0.3);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.route-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 95, 56, 0.4);
+}
+
+.route-info {
+    background: rgba(26, 95, 56, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(26, 95, 56, 0.1);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.route-info h3 {
+    color: #1a5f38;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.route-info p {
+    color: #0d3b1e;
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+#route-name {
+    color: #1a5f38;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#route-distance, #route-difficulty {
+    color: #0d3b1e;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#route-description {
+    font-style: italic;
+    margin-top: 20px;
+    color: #0d3b1e;
+    font-size: 18px;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #1a5f38, #0d3b1e);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(26, 95, 56, 0.3);
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 95, 56, 0.4);
+}
+
+@media (max-width: 480px) {
+    .filter-options {
+        flex-direction: column;
+    }
+    
+    .filter-options select {
+        width: 100%;
+    }
+    
+    .route-info {
+        padding: 20px;
+    }
+    
+    #route-name {
+        font-size: 20px;
+    }
+    
+    #route-distance, #route-difficulty {
+        font-size: 18px;
+    }
+    
+    #route-description {
+        font-size: 16px;
+    }
+} 
